@@ -4,7 +4,7 @@
   angular
     .module('wp-angular-starter', [
       'ui.router',
-      'ui.select'
+      'ui.select',
     ]);
 
 })(angular);
