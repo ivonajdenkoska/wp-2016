@@ -24,7 +24,7 @@ var JS_APP = [
   'app/group/group.state.js',
   'app/group/group.controller.js',
   'app/group/group.local.factory.js',
-  'app/default-page/**.js'
+  'app/default-page/**.js',
   'app/student/student.state.js',
   'app/student/student.controller.js',
   'app/student/student.local.factory.js',
