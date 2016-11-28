@@ -7,10 +7,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-/**
- * Created by 131044 on 11/15/2016.
- */
-
 @WebServlet(name = "AddressInfo")
 public class AddressInfo extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

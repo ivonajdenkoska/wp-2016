@@ -18,12 +18,12 @@
     </style>
 </head>
 <body>
-<form action="AddressInfo.do" method="post">
+<form action="/placeOrder" method="post">
     <h3>Order Pizza</h3>
-    <label>Name: &nbsp;</label><input id="name" type="text" name="name">
+    <label>Name: &nbsp;</label><input id="clientName" type="text" name="clientName">
     <br>
-
-    <label>Address: &nbsp;</label><input id="address" type="text" name="address">
+    <label>Address: &nbsp;</label><input id="clientAddress" type="text" name="clientAddress">
+    <br>
     <br>
     <input type="submit" value="Sumbit">
 </form>

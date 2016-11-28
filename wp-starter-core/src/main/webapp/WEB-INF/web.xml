@@ -26,29 +26,32 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
         <url-pattern>/AddressInfo.do</url-pattern>
     </servlet-mapping>
 
-    <!--<context-param>
+    <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:spring/business-config.xml</param-value>
-    </context-param>-->
+    </context-param>
 
-    <!-- &lt;!&ndash; - Location of the XML file that defines the root application context.
-         - Applied by ContextLoaderListener. &ndash;&gt;
-     <listener>
-         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-     </listener>
-     &lt;!&ndash; - Servlet that dispatches request to registered handlers (Controller
-         implementations). &ndash;&gt;
-     <servlet>
-         <servlet-name>dispatcherServlet</servlet-name>
-         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-         <init-param>
-             <param-name>contextConfigLocation</param-name>
-             <param-value>classpath:spring/mvc-core-config.xml</param-value>
-         </init-param>
-         <load-on-startup>1</load-on-startup>
-     </servlet>
-     <servlet-mapping>
-         <servlet-name>dispatcherServlet</servlet-name>
-         <url-pattern>/</url-pattern>
-     </servlet-mapping>-->
+    <!-- - Location of the XML file that defines the root application context.
+        - Applied by ContextLoaderListener. -->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+
+    <!-- - Servlet that dispatches request to registered handlers (Controller
+        implementations). -->
+    <servlet>
+        <servlet-name>dispatcherServlet</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:spring/mvc-core-config.xml</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>dispatcherServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
 </web-app>
