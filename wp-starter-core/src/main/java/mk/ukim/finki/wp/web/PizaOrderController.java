@@ -17,6 +17,7 @@ import javax.servlet.http.*;
 import java.util.List;
 
 @Controller
+@RequestMapping(value = "/")
 public class PizaOrderController {
 
     @Autowired
