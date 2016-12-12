@@ -23,13 +23,16 @@ var JS_APP = [
   'app/c1/second.controller.js',
   'app/group/group.state.js',
   'app/group/group.controller.js',
-  'app/group/group.local.factory.js',
-  'app/default-page/**.js',
+  'app/group/group.remote.service.js',
   'app/student/student.state.js',
   'app/student/student.controller.js',
   'app/student/student.local.factory.js',
-  'app/component/wp-input/wp-input.component.js',
-  'app/component/group-select/group-select.component.js'
+  'app/default-page/**.js',
+  'app/directives/showcase-directive/showcase-directive.directive.js',
+  'app/directives/wp-combo/wp-combo.directive.js',
+  'app/directives/focus-me/focus-me.directive.js',
+  'app/components/wp-input/wp-input.component.js',
+  'app/components/group-select/group-select.component.js'
 ];
 
 var TEMPLATES_SRC = [
@@ -60,7 +63,9 @@ var JS_LIB = [
   'bower_components/momentjs/moment.js',
   'bower_components/angular-ui-router/release/angular-ui-router.js',
   'bower_components/angular-ui-select/dist/select.js',
-  'bower_components/angular-smart-table/dist/smart-table.js'
+  'bower_components/angular-smart-table/dist/smart-table.js',
+  'bower_components/ngstorage/ngStorage.js',
+  'bower_components/angular-resource/angular-resource.js'
 ];
 
 
@@ -82,7 +87,7 @@ var MODULE_NAME = 'wp-angular-starter';
 /**
  * The URL of the back-end API
  */
-var API_URL = 'http://localhost:8080/servlet-showcase/api';
+var API_URL = 'http://localhost:8080/api';
 /**
  * Route to which the API calls will be mapped
  */

@@ -3,33 +3,37 @@ package mk.ukim.finki.wp.model;
 import java.util.Random;
 
 public class Group {
-    private Long id;
+    private Integer id;
     private String name;
     private Integer capacity;
     private Integer noExercise;
 
     public Group(){}
 
-    public Group(Long id, String name, Integer capacity, Integer noExercise) {
+    public Group(Integer id, String name, Integer capacity, Integer noExercise) {
         this.id = id;
         this.name = name;
         this.capacity = capacity;
         this.noExercise = noExercise;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public String getName() { return name; }
+    public String getName() {
+        return name;
+    }
 
     public Integer getCapacity() {
         return capacity;
     }
 
-    public Integer getNoExercise() { return noExercise; }
+    public Integer getNoExercise() {
+        return noExercise;
+    }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
