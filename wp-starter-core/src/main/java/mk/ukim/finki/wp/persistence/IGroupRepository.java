@@ -1,13 +1,13 @@
 package mk.ukim.finki.wp.persistence;
+
 import mk.ukim.finki.wp.model.Group;
+
 import java.util.List;
-/**
- * Created by Ivona on 13-Dec-16.
- */
-public interface GroupRepository {
+
+public interface IGroupRepository {
     List<Group> findAll();
-    Group findById(Long id);
-    void save(Group entity);
-    void update(Long id, Group entity);
-    void delete(Long id);
+    Group findById(Integer id);
+    Group save(Group entity);
+    void update(Integer id, Group entity);
+    void delete(Integer id);
 }
